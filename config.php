@@ -3,7 +3,9 @@ define('PLAYLIST_ID','PLSHSGzBF_DfawFGU_9GZTkRteamjAeOqY');
 define('VIDEO_HD',false); // should I use 720p? if set to false, I will use 360p (quite good for smartphones)
 
 define('PODCAST_NAME','My Awesome Podcast');
-define('PODCAST_DESC','THis is some podcast abaout bananas!');
+define('PODCAST_DESC','This is some podcast abaout bananas!');
+define('PODCAST_URL','http://uw-team.org');
+define('PODCAST_EMAIL','any@email.com');
 define('PODCAST_LANG','PL'); // just two letters
 define('PODCAST_AUTHOR',''); // just Your name
 define('PODCAST_CATEGORY',''); // select one from here https://gist.github.com/skattyadz/814315
