@@ -6,7 +6,7 @@ Converts Youtube playlist into iTunes compatible RSS channel (podcast/videocast)
 1) Clone this repository on Your server
 `git clone https://github.com/unkn0w/yt2podcast .`
 
-2) Just edit config.php file
+2) Just edit config.php file (You will need separate playlist on Your channel, that will be used as a source for iTunes vlog)
 
 3) You will need YouTube API key from here https://console.developers.google.com/apis/
 
