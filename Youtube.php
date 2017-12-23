@@ -28,7 +28,7 @@ class Youtube{
 		"18" => array("MP4", "Medium Quality - 480x360"),
 		"22" => array("MP4", "High Quality - 1280x720"),
 		"37" => array("MP4", "High Quality - 1920x1080"),
-		"38" => array("MP4", "High Quality - 4096x230")
+		"38" => array("MP4", "High Quality - 4096x2304")
 	);
 	
 	/**
