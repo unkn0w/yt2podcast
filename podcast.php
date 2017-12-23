@@ -1,6 +1,6 @@
 <?php
 /*
- * This script will convert Your Youtube playlist into podcast on iTunes
+ * This script will convert your Youtube playlist into podcast on iTunes
  * Please just modify "config.php" file - nothing to do here :)
  * 
  * Author: Jakub 'unknow' Mrugalski
