@@ -1,9 +1,10 @@
 <?php
 /*
  * This script will convert Your Youtube playlist into podcast on iTunes
- * Please just modify "config.php" file - nothing to change here :)
+ * Please just modify "config.php" file - nothing to do here :)
  * 
  * Author: Jakub 'unknow' Mrugalski
+ * Donate? https://www.paypal.me/uwteamorg
  *
  */
 require_once('./config.php');
@@ -23,7 +24,7 @@ function getMovies(){
 
 function addItem($title,$desc,$vidID){
         global $youtube;
-        $myURL = $_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+        $myURL = $_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST'].str_replace('/podcast.php','',$_SERVER['REQUEST_URI']);
         $data = $youtube->getDownloadLinks($vidID);
         $length = preg_replace('@.+clen=([0-9]+)&.+@','\1',$data['MP4']['Medium Quality - 480x360']);
         echo '<item>
@@ -61,7 +62,7 @@ echo '<?xml version="1.0" encoding="utf-8"?>';
     <itunes:author><?php echo PODCAST_AUTHOR; ?></itunes:author>
     <itunes:email><?php echo PODCAST_EMAIL; ?></itunes:email>
     <atom:link href="<?php echo $_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>" rel="self" type="application/rss+xml" />
-    <itunes:category text="Technology" />
+    <itunes:category text="<?php echo PODCAST_CATEGORY; ?>" />
     <itunes:image href="<?php echo PODCAST_IMAGE; ?>" />
     <media:thumbnail url="<?php echo PODCAST_IMAGE; ?>" />
     <?php
